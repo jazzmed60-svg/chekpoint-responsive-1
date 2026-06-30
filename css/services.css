@@ -1,0 +1,34 @@
+#services .reduction {
+  border: 1px solid #f1efe8;
+  background-color: #faf1cb;
+  margin-top: 70px;
+  padding: 20px;
+}
+#services h2 {
+  font-weight: 700;
+}
+
+#services .reduction div {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reduction p h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.reduction {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-red {
+  height: 40px;
+}
+#services .container {
+  display: flex;
+  justify-content: center;
+}

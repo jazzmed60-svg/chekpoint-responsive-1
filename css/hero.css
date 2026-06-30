@@ -1,0 +1,22 @@
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  text-align: center;
+  margin-top: 70px;
+}
+#hero h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+#hero p {
+  font-size: x-large;
+}
+#hero h2 {
+  color: gray;
+}
+.btn.hero {
+  display: inline;
+}

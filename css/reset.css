@@ -1,0 +1,267 @@
+/* ====================================
+   RESET CSS - Global Style Reset
+   ==================================== */
+
+/* 1. UNIVERSAL RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. ROOT ELEMENTS */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+/* 3. CONTENT ELEMENTS */
+main,
+section,
+article,
+aside,
+nav,
+header,
+footer {
+  display: block;
+}
+
+/* 4. TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1;
+}
+
+p,
+span,
+strong,
+em,
+b,
+i {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+}
+
+/* 5. LISTS */
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 6. LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a:active,
+a:visited {
+  color: inherit;
+}
+
+/* 7. MEDIA */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. FORMS */
+button,
+input,
+select,
+textarea,
+optgroup {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: inherit;
+  opacity: 0.7;
+}
+
+/* 9. INTERACTIVE ELEMENTS */
+details {
+  cursor: pointer;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 10. CODE ELEMENTS */
+code,
+pre {
+  font-family: monospace;
+  font-size: inherit;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+/* 11. QUOTES */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* 12. TABLES */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+/* 13. FORM CONTROLS */
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* 14. BROWSER APPEARANCE */
+button,
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* 15. ADDITIONAL RULES */
+hr {
+  border: none;
+  border-top: 1px solid currentColor;
+  color: inherit;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  padding: 0;
+  display: table;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+small {
+  font-size: inherit;
+}
+
+del,
+ins {
+  text-decoration: none;
+}
+
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 16. CURSORS */
+button,
+a,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}

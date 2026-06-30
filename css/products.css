@@ -1,0 +1,115 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.first-img {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+.second-img {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+.third-img {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+.fourth-img {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+.grid li {
+  width: 100%;
+}
+#products h2 {
+  font-weight: 800;
+}
+.bagpack {
+  min-width: 500px;
+  max-height: 400px;
+}
+.montre {
+  min-width: 500px;
+}
+.casque {
+  min-width: 500px;
+  max-height: 400px;
+}
+.runninig-shoes {
+  min-width: 500px;
+  max-height: 400px;
+}
+.title {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.text-1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.text-2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.text-3 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.text-4 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.btn-pro {
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+.text-1 h2,
+.text-1 p,
+.text-1 button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.text-2 h2,
+.text-2 p,
+.text-2 button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.text-3 h2,
+.text-3 p,
+.text-3 button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.text-4 h2,
+.text-4 p,
+.text-4 button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+h3 {
+  font-weight: 900;
+}
+.align {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
