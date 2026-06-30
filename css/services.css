@@ -1,23 +1,32 @@
+/* ===================== SECTION PROMOTION ===================== */
+
+/* Carte contenant l'offre promotionnelle */
 #services .reduction {
   border: 1px solid #f1efe8;
   background-color: #faf1cb;
   margin-top: 70px;
   padding: 20px;
 }
+
+/* Style du titre principal */
 #services h2 {
   font-weight: 700;
 }
 
+/* Organisation verticale des textes */
 #services .reduction div {
-  gap: 10px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
+/* Espacement entre les éléments de texte */
 .reduction p h2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/* Alignement horizontal du contenu et du bouton */
 .reduction {
   display: flex;
   flex-direction: row;
@@ -25,9 +34,13 @@
   align-items: center;
   justify-content: space-around;
 }
+
+/* Dimensions du bouton de l'offre */
 .btn-red {
   height: 40px;
 }
+
+/* Centre la section dans la page */
 #services .container {
   display: flex;
   justify-content: center;

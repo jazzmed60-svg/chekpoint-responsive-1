@@ -1,21 +1,28 @@
-/* FOOTER */
+/* ===================== FOOTER ===================== */
+
+/* Style général du pied de page */
 footer {
   background: #1a1a1a;
   color: #ccc;
   margin-top: 30px;
 }
+
+/* Organisation des différentes colonnes du footer */
 .footer-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
   padding: 48px 40px 36px;
 }
+
+/* Logo et présentation de la boutique */
 .footer-brand .logo {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 10px;
 }
+
 .footer-brand p {
   font-size: 13px;
   line-height: 1.7;
@@ -23,10 +30,13 @@ footer {
   max-width: 220px;
   margin-bottom: 16px;
 }
+
+/* Formulaire de la newsletter */
 .newsletter {
   display: flex;
   gap: 8px;
 }
+
 .newsletter input {
   flex: 1;
   padding: 9px 12px;
@@ -37,9 +47,13 @@ footer {
   font-size: 13px;
   outline: none;
 }
+
+/* Style du texte d'aide */
 .newsletter input::placeholder {
   color: #555;
 }
+
+/* Bouton d'abonnement */
 .newsletter button {
   padding: 9px 14px;
   border-radius: 7px;
@@ -50,6 +64,8 @@ footer {
   font-weight: 600;
   cursor: pointer;
 }
+
+/* Titres des colonnes */
 .footer-col h4 {
   font-size: 12px;
   font-weight: 700;
@@ -58,20 +74,27 @@ footer {
   letter-spacing: 0.07em;
   margin-bottom: 16px;
 }
+
+/* Liste des liens */
 .footer-col ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .footer-col ul a {
   font-size: 13px;
   color: #777;
   text-decoration: none;
 }
+
+/* Effet au survol des liens */
 .footer-col ul a:hover {
   color: #fff;
 }
+
+/* Partie inférieure du footer */
 .footer-bottom {
   border-top: 1px solid #2a2a2a;
   padding: 18px 40px;
@@ -81,14 +104,18 @@ footer {
   flex-wrap: wrap;
   gap: 12px;
 }
+
 .footer-bottom p {
   font-size: 12px;
   color: #444;
 }
+
+/* Icônes des moyens de paiement */
 .pay-badges {
   display: flex;
   gap: 6px;
 }
+
 .pay-badge {
   background: #2a2a2a;
   border-radius: 5px;
@@ -97,10 +124,13 @@ footer {
   color: #888;
   font-weight: 600;
 }
+
+/* Réseaux sociaux */
 .socials {
   display: flex;
   gap: 10px;
 }
+
 .socials a {
   width: 32px;
   height: 32px;
@@ -112,30 +142,43 @@ footer {
   text-decoration: none;
   font-size: 14px;
 }
+
+/* Changement de couleur au survol */
 .socials a:hover {
   background: #3a3a3a;
 }
 
-/* RESPONSIVE */
+/* ===================== VERSION RESPONSIVE ===================== */
+
 @media (max-width: 768px) {
+  /* Adaptation de la bannière */
   .banner {
     padding: 20px;
     flex-direction: column;
   }
+
   .banner-title {
     font-size: 18px;
   }
+
+  /* Les éléments passent sur deux colonnes */
   .features {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Réorganisation du footer */
   .footer-top {
     grid-template-columns: 1fr 1fr;
     padding: 32px 20px;
     gap: 24px;
   }
+
+  /* Le bloc principal occupe toute la largeur */
   .footer-brand {
     grid-column: 1 / -1;
   }
+
+  /* Empilement des éléments du footer */
   .footer-bottom {
     padding: 16px 20px;
     flex-direction: column;
@@ -144,9 +187,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+  /* Une seule colonne sur les très petits écrans */
   .features {
     grid-template-columns: 1fr;
   }
+
   .footer-top {
     grid-template-columns: 1fr;
   }

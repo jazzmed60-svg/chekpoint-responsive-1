@@ -1,3 +1,4 @@
+/* ===================== NAVBAR ===================== */
 .navbar {
   border: 10px solid white;
   background-color: white;
@@ -6,22 +7,30 @@
   align-items: center;
   padding: 0 2 em;
 }
+
+/* Logo de la boutique */
 .logo {
   display: flex;
   align-items: center;
   gap: 20px;
   font-weight: 700;
 }
+
+/* Menu de navigation principal */
 .navigation {
   display: flex;
   gap: 70px;
 }
+
+/* Zone des icônes et du bouton de connexion */
 .sign {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
 }
+
+/* Bouton du menu hamburger (caché sur grand écran) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -31,6 +40,8 @@
   gap: 0.5rem;
   cursor: pointer;
 }
+
+/* Barres du menu hamburger */
 .line {
   height: 0.18rem;
   width: 100%;
@@ -39,23 +50,30 @@
   transition: all 300ms ease-in;
 }
 
+/* Changement de couleur au survol */
 .hamburger:hover .line {
   background-color: var(--primary-color);
 }
 
+/* Élément prévu pour fermer le menu mobile */
 .navigation .close {
   display: none;
 }
 
+/* ===================== VERSION RESPONSIVE ===================== */
 @media (max-width: 1200px) {
+
+  /* Masquer le menu sur les petits écrans */
   .navigation {
     display: none;
   }
 
+  /* Masquer le bouton "Sign in" */
   .btn {
     display: none;
   }
 
+  /* Afficher le menu hamburger */
   .hamburger {
     display: flex;
     flex-direction: column;

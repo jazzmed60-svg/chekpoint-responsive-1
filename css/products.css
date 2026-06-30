@@ -1,3 +1,6 @@
+/* ===================== SECTION PRODUITS ===================== */
+
+/* Grille d'affichage des cartes produits */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -6,108 +9,145 @@
   justify-content: center;
 }
 
+/* Cartes des différents produits */
 .first-img {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
 }
+
 .second-img {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
 }
+
 .third-img {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
 }
+
 .fourth-img {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
 }
+
+/* Les produits occupent toute la largeur de leur carte */
 .grid li {
   width: 100%;
 }
+
+/* Style du titre principal de la section */
 #products h2 {
   font-weight: 800;
 }
+
+/* Dimensions des images */
 .bagpack {
   min-width: 500px;
   max-height: 400px;
 }
+
 .montre {
   min-width: 500px;
 }
+
 .casque {
   min-width: 500px;
   max-height: 400px;
 }
+
 .runninig-shoes {
   min-width: 500px;
   max-height: 400px;
 }
+
+/* Positionnement du titre de la section */
 .title {
   margin-top: 100px;
   margin-left: 100px;
 }
+
+/* Espacement du contenu des cartes */
 .text-1 {
   margin-top: 20px;
   margin-left: 20px;
 }
+
 .text-2 {
   margin-top: 20px;
   margin-left: 20px;
 }
+
 .text-3 {
   margin-top: 20px;
   margin-left: 20px;
 }
+
 .text-4 {
   margin-top: 20px;
   margin-left: 20px;
 }
+
+/* Position du bouton d'achat */
 .btn-pro {
   margin-bottom: 20px;
   margin-left: 300px;
 }
+
+/* Espacement entre les éléments de texte */
 .text-1 h2,
 .text-1 p,
 .text-1 button {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+
 .text-2 h2,
 .text-2 p,
 .text-2 button {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+
 .text-3 h2,
 .text-3 p,
 .text-3 button {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+
 .text-4 h2,
 .text-4 p,
 .text-4 button {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+
+/* Mise en valeur du prix */
 h3 {
   font-weight: 900;
 }
+
+/* Alignement horizontal du prix et du bouton */
 .align {
   display: flex;
   align-items: center;
 }
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Passage à une seule colonne sur tablette */
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
 }
+
+/* Conservation d'une colonne sur mobile */
 @media (max-width: 767px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
